@@ -43,11 +43,11 @@ GoVM: Go版本管理器.[0.0.1.dev]
 使用`curl`安装
 
 ```shell
-curl -sLk https://git.io/gobrew | sh -
+curl -sLk https://raw.githubusercontent.com/TaceyWong/govm/master/install.sh | sh -
 ```
 或使用`go`安装
 ```shell
-go install github.com/kevincobain2000/gobrew/cmd/gobrew@latest
+go install github.com/TaceyWong/govm/cmd/govm@latest
 ```
 在你的shell配置文件中将`govm`添加到环境变量(.bashrc 或 .zshrc).
 ```shell
