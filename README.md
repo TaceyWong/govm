@@ -1,4 +1,4 @@
-# GoVM: A  Go Version Manager. 
+# GoVM: <small>A  Go Version Manager</small>. 
 
 **快速配置**: 一条命令安装Go并管理版本.
 
