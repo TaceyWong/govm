@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"govm"
 	"log"
 	"os"
 	"strings"
@@ -47,14 +48,14 @@ func init() {
 }
 
 func main() {
-
+	g := govm.NewGoVM()
 	switch actionArg {
 	case "h", "help":
 		cs.Print(usage())
 	case "ls", "list":
 		tmp("list")
 	case "ls-remote":
-		tmp("ls-remote")
+		g.ListRemoteVersions()
 	case "install":
 		tmp("install")
 	case "use":
