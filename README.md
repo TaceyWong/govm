@@ -2,6 +2,14 @@
 
 GoVM: A  Go Version Manager. 
 
+**快速配置**: 一条命令安装Go并管理版本.
+
+**权限自由**: 无需root或sudo权限
+
+**支持平台**: 支持Linux、FreeBSD、Mac.
+
+**操作灵活**: 自由管理切换不同版本的Go
+
 
 ```shell
 GoVM: Go版本管理器.[0.0.1.dev]
@@ -29,3 +37,20 @@ GoVM: Go版本管理器.[0.0.1.dev]
     将下面信息添加到你的~/.bashrc或~/.zshrc把GoVM加入环境变量
     export PATH="$HOME/.govm/current/bin:$HOME/.govm/bin:$PATH"
 ```
+
+## 安装和更新
+
+使用`curl`安装
+
+```shell
+curl -sLk https://git.io/gobrew | sh -
+```
+或使用`go`安装
+```shell
+go install github.com/kevincobain2000/gobrew/cmd/gobrew@latest
+```
+在你的shell配置文件中将`govm`添加到环境变量(.bashrc 或 .zshrc).
+```shell
+export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
+```
+重载配置，一切完成！
