@@ -48,14 +48,14 @@ func init() {
 }
 
 func main() {
-	g := govm.NewGoVM()
+	g := govm.NewGoVm()
 	switch actionArg {
 	case "h", "help":
 		cs.Print(usage())
 	case "ls", "list":
-		tmp("list")
+		g.ListVersions()
 	case "ls-remote":
-		g.ListRemoteVersions()
+		g.ListRemoteVersions(true)
 	case "install":
 		tmp("install")
 	case "use":
